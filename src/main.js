@@ -15,8 +15,8 @@ Vue.use(Element, { locale })
 const store = new Vuex.Store({
   state: {
     user: {
-      nombre: 'karen',
-      correo: 'karen@gmail.com',
+      nombre: '',
+      correo: '',
       id: ''
     },
       edit: false, // para el boton editar us

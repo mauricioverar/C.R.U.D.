@@ -47,6 +47,8 @@ export default {
         .then((accept) => {
             console.log('accept' ,accept)//
           this.loading = false;
+          this.user.nombre = ''
+          this.user.correo = ''
           this.$store.dispatch("getusers");
         });
     },
@@ -66,6 +68,8 @@ export default {
             console.log('accept' ,accept)
             console.log('this.loading' ,this.loading)
           this.loading = false;
+          this.user.nombre = ''
+          this.user.correo = ''
           this.$store.dispatch("getusers");
         });
     },
